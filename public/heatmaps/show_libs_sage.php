@@ -1,0 +1,88 @@
+<?
+session_start();
+
+$type   =$_REQUEST["type"];
+$id     =$_REQUEST["id"];
+$len    =$_REQUEST["len"];
+
+require "shared/bib.php";
+require "../func.php";
+
+
+
+
+ cab("microarray");
+ echo"<body>
+ <div id=\"nav\">
+ <h1><span class=\"bluelight\">CT</span>pedia</h1>
+ </div>";
+/*
+ "<div  id =\"menuprincipal\" class=\"tabmenu2\">
+ <ul>
+  <li><a href=\"index.php\">Project</a></li>
+  <li><a href=\"index.php?id=2\">Participants</a></li>
+  <li><a href=\"#\">Contact</a></li>";
+  if(isset($nome)){
+  echo "<li><a href=\"modelo.php\">List of Genes</a></li>";
+  echo "<li><a href=\"modelo.php?idmeta=13\">Search</a></li>";
+  }
+ echo "</ul>
+ </div>
+<div id=\"wrapper\">
+ <div id=\"leftnav\">
+
+ <div class=\"utility\">
+  <strong>Text size:</strong>
+  &nbsp;<a href=\"javascript:increaseFontSize();\"><img src=\"img/amais.gif\" alt=\"Bigger text\" class=\"middleimg\"/></a>
+  <a href=\"javascript:decreaseFontSize();\"><img src=\"img/amenos.gif\" alt=\"Smaller text\" class=\"middleimg\"/></a>
+  <a href=\"javascript:defaultFontSize();\"><img src=\"img/default.gif\" alt=\"Smaller text\" class=\"middleimg\"/></a>
+  </div>";
+*/
+echo "<div id=\"contentmicroarray\">";
+
+
+connect("cta02");
+//start_mysql("sage_mpss","localhost","noboru","abc123");
+
+$query="select lib, size, tissue, tissueprep, cell_type, age, sex, mut, otherinfo, ref, state from sage_lib where id=$id";
+$result = mysql_query($query) or die('Query failed 1(Search failed): '. mysql_error());
+$dbdata = mysql_fetch_row($result);
+$lib        =$dbdata[0];
+$size       =$dbdata[1];
+$tissue     =$dbdata[2];
+$tissueprep =$dbdata[3];
+$cell_type  =$dbdata[4];
+$age        =$dbdata[5];
+$sex        =$dbdata[6];
+$mut        =$dbdata[7];
+$otherinfo  =$dbdata[8];
+$ref        =$dbdata[9];
+$state      =$dbdata[10];
+
+$ref=preg_replace('/\|/','<br>',$ref);
+
+
+
+#
+# LAYOUT
+#
+echo "<table class=\"GeneExpression\">";
+echo "<tr><thead><th colspan=\"2\">Info for $type.$len library $lib</th></thead>";
+echo "<tr><tbody>
+<td>library name</td>         <td>$lib</td></tr>
+<td>state</td>                <td>$state</td></tr>
+<td>number of SAGE tags</td>  <td>$size</td></tr>
+<td>tissue</td>               <td>$tissue</td></tr>
+<td>tissue preparation</td>   <td>$tissueprep</td></tr>
+<td>cell type</td>            <td>$cell_type</td></tr>
+<td>age</td>                  <td>$age</td></tr>
+<td>sex</td>                  <td>$sex</td></tr>
+<td>mutations</td>            <td>$mut</td></tr>
+<td>other information</td>    <td>$otherinfo</td></tr>
+<td>reference</td>            <td>$ref</td></tr>
+</tr></tbody>";
+echo "</table>";
+
+echo "</div></body></html>";
+
+?>

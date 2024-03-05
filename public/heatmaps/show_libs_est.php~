@@ -1,0 +1,104 @@
+<?
+$tissue   =$_GET['libs_tissue'];
+$gene   =$_GET['gene'];
+$state   =$_GET['state'];
+
+
+$type=$config="est";
+require "shared/bib.php";
+require "../func.php";
+
+connect("cta02");
+//start_mysql("estprofiles","localhost","noboru","abc123");
+
+
+echo "EST libraries from $tissue ($state, non-normalized)<br>";
+
+echo "<table border=1>";
+echo "<col width='10%'><col width='20%'><col width='20'>";
+echo "<tr><td>Library ID</td><td>Library name</td><td></td><td>Cancer source</td><td>Tissue info</td></tr>";
+echo libs($tissue, $norm_factor, $gene, $parcel, $step, $state);
+echo "</table>";
+
+
+# layout da tabela
+function table_row($lid, $state, $annot, $title, $verbatim_tissue, $cell){
+    return "
+<tr>
+  <td>
+    <a href='http://www.ncbi.nlm.nih.gov/UniGene/library.cgi?ORG=Hs&LID=".$lid."'>$lid</a>
+  </td>
+  <td>
+    $title
+  </td>
+
+    $cell
+
+  <td>
+    $annot
+  </td>
+  <td>
+    $verbatim_tissue
+  </td>
+</tr>
+";
+}
+
+
+
+
+
+
+
+
+
+# ATENCAO
+# somente acesso ao banco, nao e' necessario mexer para fazer o layout
+#
+function libs($tissue, $norm_factor, $gene, $parcel, $step, $state){
+    $query = "select est_libs.lid, count(tissue) from est_libs, est_clusters where est_clusters.lid=est_libs.lid and state='$state' and norm='n' and tissue='$tissue' and  gene='$gene' group by est_libs.lid;";
+    if($tissue == "skin"){
+	$query = "select est_libs.lid, count(tissue) from est_libs, est_clusters where est_clusters.lid=est_libs.lid and state='$state' and norm='n' and verbatim_tissue like '%melanoma%' and  gene='$gene' group by est_libs.lid;";
+    }
+    else if($tissue == "leukemia"){
+	$query = "select est_libs.lid, count(tissue) from est_libs, est_clusters where est_clusters.lid=est_libs.lid and state='$state' and norm='n' and annot='leukemia' and  gene='$gene' group by est_libs.lid;";
+    }
+    else if($tissue == "lymphoma"){
+	$query = "select est_libs.lid, count(tissue) from est_libs, est_clusters where est_clusters.lid=est_libs.lid and state='$state' and norm='n' and annot='lymphoma' and  gene='$gene' group by est_libs.lid;";
+    }
+
+    $result = mysql_query($query) or die('Query failed (Search failed): '. mysql_error());
+    while( $dbdata = mysql_fetch_row($result) ){
+	$lid       =$dbdata[0];
+	$freq      =$dbdata[1];
+
+	$freqs[$lid]=$freq;
+    }
+
+    if($tissue == "skin"){
+	$query="select lid, state, annot, title, verbatim_tissue, count from est_libs where tissue='skin' and state='$state' and norm='n' and verbatim_tissue like '%melanoma%' and count>0;";
+    }
+    else if($tissue == "leukemia"){
+	$query="select lid, state, annot, title, verbatim_tissue, count from est_libs where state='$state' and norm='n' and annot='leukemia' and count>0;";
+    }
+    else if($tissue == "lymphoma"){
+	$query="select lid, state, annot, title, verbatim_tissue, count from est_libs where state='$state' and norm='n' and annot='lymphoma' and count>0;";
+    }
+    else{
+	$query="select lid, state, annot, title, verbatim_tissue, count from est_libs where state='$state' and tissue='$tissue' and norm='n' and count>0" ;
+    }
+    $result = mysql_query($query) or die('Query failed (Search failed): '. mysql_error());
+    while( $dbdata = mysql_fetch_row($result) ){
+	$lid       =$dbdata[0];
+	$state     =$dbdata[1];
+	$annot     =$dbdata[2];
+	$title     =$dbdata[3];
+	$verbatim_tissue     =$dbdata[4];
+	$libsize     =$dbdata[5];
+
+	$cell=cell($freqs[$lid]/$libsize*$norm_factor, $parcel, $step, 0, $norm_factor, 0, 0, $type);
+	$rows.=table_row($lid, $state, $annot, $title, $verbatim_tissue, $cell);
+    }
+    return $rows;
+}
+?>

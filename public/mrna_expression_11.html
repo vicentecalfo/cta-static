@@ -7,7 +7,7 @@
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="expires" content="0" />
 <title>CTpedia</title>
-<link href="http://www.cta.lncc.br/styles/stylepage.css"" rel="stylesheet" type="text/css" title="Estilos de layout."/>
+<link href="styles/stylepage.css" rel="stylesheet" type="text/css" title="Estilos de layout."/>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47755155-3"></script>
 <script>
@@ -16,10 +16,10 @@
   gtag('js', new Date());
   gtag('config', 'UA-47755155-3');
 </script>
-<script type="text/javascript" src="http://www.cta.lncc.br/styles/library.js"></script>
-<script type="text/javascript" src="http://www.cta.lncc.br/styles/javascript.js"></script>
-<script type="text/javascript" src="http://www.cta.lncc.br/styles/autocomplet.js"></script>
-<script type="text/javascript" src="http://www.cta.lncc.br/styles/expandTables.js"></script>
+<script type="text/javascript" src="styles/library.js"></script>
+<script type="text/javascript" src="styles/javascript.js"></script>
+<script type="text/javascript" src="styles/autocomplet.js"></script>
+<script type="text/javascript" src="styles/expandTables.js"></script>
 <script type="text/javascript">
 function show_libs_details(type ,id ,len){
     window.open('heatmaps/show_libs_sage.php?type='+type+'&id='+id+'&len='+len ,'lib','height = 350 ,width = 450,resizable=yes,toolbar=yes,scrollbars=yes');
@@ -61,9 +61,9 @@ function show_libs_tr(gene,tissue,type,len,state){
 
  <div class="utility">
   <strong>Text size:</strong>
-  &nbsp;<a href="javascript:increaseFontSize();"><img src="http://www.cta.lncc.br/img/amais.gif" alt="Bigger text" class="middleimg"/></a>
-  <a href="javascript:decreaseFontSize();"><img src="http://www.cta.lncc.br/img/amenos.gif" alt="Smaller text" class="middleimg"/></a>
-  <a href="javascript:defaultFontSize();"><img src="http://www.cta.lncc.br/img/default.gif" alt="Smaller text" class="middleimg"/></a>
+  &nbsp;<a href="javascript:increaseFontSize();"><img src="img/amais.gif" alt="Bigger text" class="middleimg"/></a>
+  <a href="javascript:decreaseFontSize();"><img src="img/amenos.gif" alt="Smaller text" class="middleimg"/></a>
+  <a href="javascript:defaultFontSize();"><img src="img/default.gif" alt="Smaller text" class="middleimg"/></a>
   </div><div class="section">
 <h1 class="user">User logged:</h1>
 
@@ -556,7 +556,7 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 <tr class="colorfultype2">
  <td align="center">Myeloma<br/></td>
  <td align="center"></td>
- <td align="center">0/2 (0%(stage II)</td>
+ <td align="center">0/9 (0%)(stage I)</td>
  <td align="center">RT-PCR</td>
  <td rowspan="3" align="center">
 <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=Retrieve&dopt=Citation&list_uids=10438702" target="_blank">10438702</a>
@@ -565,13 +565,13 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 <tr class="colorfultype2">
  <td align="center">Myeloma<br/></td>
  <td align="center"></td>
- <td align="center">0/9 (0%)(stage I)</td>
+ <td align="center">8/26 (31%)(stage III)</td>
  <td align="center">RT-PCR</td>
 </tr>
 <tr class="colorfultype2">
  <td align="center">Myeloma<br/></td>
  <td align="center"></td>
- <td align="center">8/26 (31%)(stage III)</td>
+ <td align="center">0/2 (0%(stage II)</td>
  <td align="center">RT-PCR</td>
 </tr>
 <tr class="colorful">
@@ -828,7 +828,7 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 <tr class="colorful">
  <td align="center">Hepatocellular carcinoma<br/></td>
  <td align="center"></td>
- <td align="center">14/20 (70%)(Mod differentiated)</td>
+ <td align="center">7/10 (70%)(Well differentiated)</td>
  <td align="center">RT-PCR</td>
  <td rowspan="3" align="center">
 <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=Retrieve&dopt=Citation&list_uids=10782910" target="_blank">10782910</a>
@@ -837,13 +837,13 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 <tr class="colorful">
  <td align="center">Hepatocellular carcinoma<br/></td>
  <td align="center"></td>
- <td align="center">7/10 (70%)(Well differentiated)</td>
+ <td align="center">� (50%)(Poorly differentiated)</td>
  <td align="center">RT-PCR</td>
 </tr>
 <tr class="colorful">
  <td align="center">Hepatocellular carcinoma<br/></td>
  <td align="center"></td>
- <td align="center">� (50%)(Poorly differentiated)</td>
+ <td align="center">14/20 (70%)(Mod differentiated)</td>
  <td align="center">RT-PCR</td>
 </tr>
 <tr class="colorfultype2">
@@ -876,7 +876,7 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 <tr class="colorful">
  <td align="center">Hepatocellular carcinoma<br/></td>
  <td align="center"></td>
- <td align="center">15/17 (88%)(Mod differentiated)</td>
+ <td align="center">5/8 (62%)(Well differentiated)</td>
  <td align="center">RT-PCR</td>
  <td rowspan="3" align="center">
 <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=Retrieve&dopt=Citation&list_uids=10576668" target="_blank">10576668</a>
@@ -885,13 +885,13 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 <tr class="colorful">
  <td align="center">Hepatocellular carcinoma<br/></td>
  <td align="center"></td>
- <td align="center">5/8 (62%)(Well differentiated)</td>
+ <td align="center">� (50%)(Poorly differentiated)</td>
  <td align="center">RT-PCR</td>
 </tr>
 <tr class="colorful">
  <td align="center">Hepatocellular carcinoma<br/></td>
  <td align="center"></td>
- <td align="center">� (50%)(Poorly differentiated)</td>
+ <td align="center">15/17 (88%)(Mod differentiated)</td>
  <td align="center">RT-PCR</td>
 </tr>
 <tr class="colorfultype2">
@@ -942,7 +942,7 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 <tr class="colorful">
  <td align="center">Hepatocellular carcinoma<br/></td>
  <td align="center"></td>
- <td align="center">18/56 (32%)(Mod or poorly differentiated)</td>
+ <td align="center">0/4 (0%)(Well differentiated)</td>
  <td align="center">RT-PCR</td>
  <td rowspan="2" align="center">
 <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=Retrieve&dopt=Citation&list_uids=10568832" target="_blank">10568832</a>
@@ -951,7 +951,7 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 <tr class="colorful">
  <td align="center">Hepatocellular carcinoma<br/></td>
  <td align="center"></td>
- <td align="center">0/4 (0%)(Well differentiated)</td>
+ <td align="center">18/56 (32%)(Mod or poorly differentiated)</td>
  <td align="center">RT-PCR</td>
 </tr>
 <tr class="colorfultype2">
@@ -965,8 +965,8 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 </tr>
 <tr class="colorful">
  <td align="center">Hepatocellular carcinoma<br/></td>
- <td align="center">Blood sample</td>
- <td align="center">13/30 (43.3%)</td>
+ <td align="center">Tumor</td>
+ <td align="center">21/30 (70%)</td>
  <td align="center">RT-PCR</td>
  <td rowspan="2" align="center">
 <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=Retrieve&dopt=Citation&list_uids=11857021" target="_blank">11857021</a>
@@ -974,8 +974,8 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 </tr>
 <tr class="colorful">
  <td align="center">Hepatocellular carcinoma<br/></td>
- <td align="center">Tumor</td>
- <td align="center">21/30 (70%)</td>
+ <td align="center">Blood sample</td>
+ <td align="center">13/30 (43.3%)</td>
  <td align="center">RT-PCR</td>
 </tr>
 <tr class="colorfultype2">
@@ -1007,8 +1007,8 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 </tr>
 <tr class="colorful">
  <td align="center">Hepatocellular carcinoma<br/></td>
- <td align="center">Tumor</td>
- <td align="center">67/90 (74%)</td>
+ <td align="center">Blood sample</td>
+ <td align="center">34/90 (38%)</td>
  <td align="center">RT-PCR</td>
  <td rowspan="2" align="center">
 <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=Retrieve&dopt=Citation&list_uids=20731022" target="_blank">20731022</a>
@@ -1016,8 +1016,8 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 </tr>
 <tr class="colorful">
  <td align="center">Hepatocellular carcinoma<br/></td>
- <td align="center">Blood sample</td>
- <td align="center">34/90 (38%)</td>
+ <td align="center">Tumor</td>
+ <td align="center">67/90 (74%)</td>
  <td align="center">RT-PCR</td>
 </tr>
 </table>
@@ -1183,8 +1183,8 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 </tr>
 <tr class="colorfultype2">
  <td align="center">Non small cell lung carcinoma<br/></td>
- <td align="center">Adjacent normal tissue</td>
- <td align="center">13/20 (65%)</td>
+ <td align="center">Primary tumor</td>
+ <td align="center">14/20 (70%)</td>
  <td align="center">RT-PCR</td>
  <td rowspan="3" align="center">
 <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=Retrieve&dopt=Citation&list_uids=11691819" target="_blank">11691819</a>
@@ -1192,14 +1192,14 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 </tr>
 <tr class="colorfultype2">
  <td align="center">Non small cell lung carcinoma<br/></td>
- <td align="center">Primary tumor</td>
- <td align="center">14/20 (70%)</td>
+ <td align="center">Bronchial brush specimens from former smokers</td>
+ <td align="center">7/20 (35%)</td>
  <td align="center">RT-PCR</td>
 </tr>
 <tr class="colorfultype2">
  <td align="center">Non small cell lung carcinoma<br/></td>
- <td align="center">Bronchial brush specimens from former smokers</td>
- <td align="center">7/20 (35%)</td>
+ <td align="center">Adjacent normal tissue</td>
+ <td align="center">13/20 (65%)</td>
  <td align="center">RT-PCR</td>
 </tr>
 <tr class="colorful">
@@ -1296,14 +1296,14 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 </tr>
 <tr class="colorfultype2">
  <td align="center">Melanoma<br/></td>
- <td align="center">Metastatic tumor</td>
- <td align="center">1/3 (33%)</td>
+ <td align="center">Primary tumor</td>
+ <td align="center">0/4 (0%)</td>
  <td align="center">RT-PCR</td>
 </tr>
 <tr class="colorfultype2">
  <td align="center">Melanoma<br/></td>
- <td align="center">Primary tumor</td>
- <td align="center">0/4 (0%)</td>
+ <td align="center">Metastatic tumor</td>
+ <td align="center">1/3 (33%)</td>
  <td align="center">RT-PCR</td>
 </tr>
 <tr class="colorfultype2">
@@ -1323,20 +1323,20 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 </tr>
 <tr class="colorfultype2">
  <td align="center">Melanoma<br/></td>
- <td align="center">Primary tumor</td>
- <td align="center">16/100 (16%)</td>
- <td align="center">RT-PCR</td>
-</tr>
-<tr class="colorfultype2">
- <td align="center">Melanoma<br/></td>
  <td align="center">Metastatic tumor</td>
  <td align="center">70/145 (48%)</td>
  <td align="center">RT-PCR</td>
 </tr>
+<tr class="colorfultype2">
+ <td align="center">Melanoma<br/></td>
+ <td align="center">Primary tumor</td>
+ <td align="center">16/100 (16%)</td>
+ <td align="center">RT-PCR</td>
+</tr>
 <tr class="colorful">
  <td align="center">Ocular melanoma<br/></td>
- <td align="center">Metastatic tumor</td>
- <td align="center">� (75%)</td>
+ <td align="center">Primary tumor</td>
+ <td align="center">1/1 (100%)</td>
  <td align="center">RT-PCR</td>
  <td rowspan="2" align="center">
 <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=Retrieve&dopt=Citation&list_uids=9247253" target="_blank">9247253</a>
@@ -1344,8 +1344,8 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 </tr>
 <tr class="colorful">
  <td align="center">Ocular melanoma<br/></td>
- <td align="center">Primary tumor</td>
- <td align="center">1/1 (100%)</td>
+ <td align="center">Metastatic tumor</td>
+ <td align="center">� (75%)</td>
  <td align="center">RT-PCR</td>
 </tr>
 <tr class="colorfultype2">
@@ -1462,8 +1462,8 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 </tr>
 <tr class="colorful">
  <td align="center">Ovarian carcinoma<br/></td>
- <td align="center">Primary tumor</td>
- <td align="center">15/27 (55%)</td>
+ <td align="center">Benign lesion</td>
+ <td align="center">11/25 (44%)</td>
  <td align="center">RT-PCR</td>
  <td rowspan="2" align="center">
 <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&cmd=Retrieve&dopt=Citation&list_uids=9743307" target="_blank">9743307</a>
@@ -1471,8 +1471,8 @@ Northern blot</td><td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez
 </tr>
 <tr class="colorful">
  <td align="center">Ovarian carcinoma<br/></td>
- <td align="center">Benign lesion</td>
- <td align="center">11/25 (44%)</td>
+ <td align="center">Primary tumor</td>
+ <td align="center">15/27 (55%)</td>
  <td align="center">RT-PCR</td>
 </tr>
 <tr class="colorfultype2">
@@ -1614,12 +1614,12 @@ T47D</td>
 <tr class="colorful"><td>Colorectal carcinoma</td><td align="center">VMRC-MELG<br/>LoVo<br/>WiDr<br/>Colo205</td>
 <td align="center">4/8 (50%)</td><td align="center">RT-PCR</td>
 <td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=8757382" target="_blank">8757382</a></td></tr>
-<tr class="colorfultype2"><td>Gastrict carcinoma</td><td align="center">MKN1<br/>MKN7<br/>MKN28<br/>MKN74<br/>KATO-III<br/>TSG11<br/>ECC12</td>
-<td align="center">7/10 (70%)</td><td align="center">RT-PCR</td>
-<td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=14970862" target="_blank">14970862</a></td></tr>
-<tr class="colorful"><td>Gastrict carcinoma</td><td align="center">NUGC3<br/>NS8<br/>MKN74<br/>MKN7<br/>MKN28<br/>KATOIII</td>
+<tr class="colorfultype2"><td>Gastrict carcinoma</td><td align="center">NUGC3<br/>NS8<br/>MKN74<br/>MKN7<br/>MKN28<br/>KATOIII</td>
 <td align="center">6/9 (67%)</td><td align="center">RT-PCR</td>
 <td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=10446460" target="_blank">10446460</a></td></tr>
+<tr class="colorful"><td>Gastrict carcinoma</td><td align="center">MKN1<br/>MKN7<br/>MKN28<br/>MKN74<br/>KATO-III<br/>TSG11<br/>ECC12</td>
+<td align="center">7/10 (70%)</td><td align="center">RT-PCR</td>
+<td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=14970862" target="_blank">14970862</a></td></tr>
 <tr class="colorfultype2"><td>Glioma</td><td align="center"></td>
 <td align="center">1/13 (8%)</td><td align="center">RT-PCR</td>
 <td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=22534618" target="_blank">22534618</a></td></tr>
@@ -1644,43 +1644,43 @@ T47D</td>
 <tr class="colorful"><td>Medullary thyroid carcinoma</td><td align="center">TT</td>
 <td align="center"></td><td align="center">Northern blot</td>
 <td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=1840703" target="_blank">1840703</a></td></tr>
+<tr class="colorfultype2"><td>Melanoma</td><td align="center">LB1751-MEL<br/>LB373-MEL<br/>AVL3-MEL</td>
+<td align="center"></td><td align="center">Oligonucleotide microarray</td>
+<td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=11751535" target="_blank">11751535</a></td></tr>
+<tr class="colorful"><td>Melanoma</td><td align="center">397-mel<br/>397-R4-mel<br/>501-mel<br/>553-mel<br/>586-mel<br/>697-mel<br/>836-mel<br/>938-mel<br/>MZ2-mel-43</td>
+<td align="center">9/17 (53%)</td><td align="center">RT-PCR</td>
+<td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=8416750" target="_blank">8416750</a></td></tr>
+<tr class="colorfultype2"><td>Melanoma</td><td align="center">MZ2.MEL3.0<br/>LB34-MEL<br/>M110221-MEL<br/>M113443-MEL<br/>SK33-MEL<br/>SK23-MEL<br/>LB17-MEL<br/>LB33-MEL<br/>MI4024-MEL<br/>MZ3-MEL<br/>MZ5-MEL</td>
+<td align="center"></td><td align="center">Northern blot</td>
+<td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=1840703" target="_blank">1840703</a></td></tr>
+<tr class="colorful"><td>Melanoma</td><td align="center">WM115-A<br/>WM1972-A<br/>WM1976-A<br/>WM3130-A</td>
+<td align="center">4/4 (100%)</td><td align="center">RT-PCR</td>
+<td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=18205182" target="_blank">18205182</a></td></tr>
 <tr class="colorfultype2"><td>Melanoma</td><td align="center">MI10221<br/>MZ2-MEL3.0</td>
 <td align="center"></td><td align="center">RT-PCR</td>
 <td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=7927540" target="_blank">7927540</a></td></tr>
-<tr class="colorful"><td>Melanoma</td><td align="center">MZ2.MEL3.0<br/>LB34-MEL<br/>M110221-MEL<br/>M113443-MEL<br/>SK33-MEL<br/>SK23-MEL<br/>LB17-MEL<br/>LB33-MEL<br/>MI4024-MEL<br/>MZ3-MEL<br/>MZ5-MEL</td>
-<td align="center"></td><td align="center">Northern blot</td>
-<td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=1840703" target="_blank">1840703</a></td></tr>
-<tr class="colorfultype2"><td>Melanoma</td><td align="center">WM115-A<br/>WM1972-A<br/>WM1976-A<br/>WM3130-A</td>
-<td align="center">4/4 (100%)</td><td align="center">RT-PCR</td>
-<td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=18205182" target="_blank">18205182</a></td></tr>
 <tr class="colorful"><td>Melanoma</td><td align="center">MZ2-MEL<br/>MZ2-MEL.61D<br/>LY1-MEL<br/>MI-10221-MEL<br/>LY2-MEL<br/>LB34-MEL<br/>MI-13441-MEL<br/>LB33-MEL<br/>LB73-MEL</td>
 <td align="center">9/16 (56%)</td><td align="center">RT-PCR</td>
 <td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=8113684" target="_blank">8113684</a></td></tr>
-<tr class="colorfultype2"><td>Melanoma</td><td align="center">UKRV-Mel-02<br/>WM98.1<br/>UKRV-Mel-14<br/>UKRV-Mel-20<br/>UKRV-Mel-06<br/>UKRV-Mel-21<br/>UKRV-Mel-31<br/>UKRV-Mel-27<br/>Ma-Mel-13</td>
-<td align="center">20/24 (83%)</td><td align="center">Nested RT-PCR</td>
-<td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=12190937" target="_blank">12190937</a></td></tr>
-<tr class="colorful"><td>Melanoma</td><td align="center">MI10221<br/>MZ2-MEL3.0</td>
+<tr class="colorfultype2"><td>Melanoma</td><td align="center">MI10221<br/>MZ2-MEL3.0</td>
 <td align="center"></td><td align="center">RT-PCR</td>
 <td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=7927540" target="_blank">7927540</a></td></tr>
+<tr class="colorful"><td>Melanoma</td><td align="center">UKRV-Mel-02<br/>WM98.1<br/>UKRV-Mel-14<br/>UKRV-Mel-20<br/>UKRV-Mel-06<br/>UKRV-Mel-21<br/>UKRV-Mel-31<br/>UKRV-Mel-27<br/>Ma-Mel-13</td>
+<td align="center">20/24 (83%)</td><td align="center">Nested RT-PCR</td>
+<td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=12190937" target="_blank">12190937</a></td></tr>
 <tr class="colorfultype2"><td>Melanoma</td><td align="center">553-B<br/>586-M<br/>836-M<br/>1195-M<br/>1274-M<br/>1359-M<br/>1390-M</td>
 <td align="center">7/38 (18%)</td><td align="center">qRT-PCR</td>
 <td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=10842196" target="_blank">10842196</a></td></tr>
-<tr class="colorful"><td>Melanoma</td><td align="center">Ma-Mel-11<br/>Ma-Mel-13<br/>Ma-Mel-18<br/>Ma-Mel-22<br/>Ma-Mel-33<br/>Ma-Mel-36<br/>Ma-Mel-37<br/>UKRV-Mel-06<br/>UKRV-Mel-10<br/>UKRV-M</td>
-<td align="center">12/15 (80%)</td><td align="center">RT-PCR</td>
-<td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=12932233" target="_blank">12932233</a></td></tr>
-<tr class="colorfultype2"><td>Melanoma</td><td align="center">Sk-Mel-37<br/>
+<tr class="colorful"><td>Melanoma</td><td align="center">Sk-Mel-37<br/>
 Sk-Mel-28<br/>
 Sk-Mel-24<br/>
 Malme-3M<br/>
 </td>
 <td align="center">4/5 (80%)</td><td align="center">RT-PCR</td>
 <td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=18395366" target="_blank">18395366</a></td></tr>
-<tr class="colorful"><td>Melanoma</td><td align="center">397-mel<br/>397-R4-mel<br/>501-mel<br/>553-mel<br/>586-mel<br/>697-mel<br/>836-mel<br/>938-mel<br/>MZ2-mel-43</td>
-<td align="center">9/17 (53%)</td><td align="center">RT-PCR</td>
-<td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=8416750" target="_blank">8416750</a></td></tr>
-<tr class="colorfultype2"><td>Melanoma</td><td align="center">LB1751-MEL<br/>LB373-MEL<br/>AVL3-MEL</td>
-<td align="center"></td><td align="center">Oligonucleotide microarray</td>
-<td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=11751535" target="_blank">11751535</a></td></tr>
+<tr class="colorfultype2"><td>Melanoma</td><td align="center">Ma-Mel-11<br/>Ma-Mel-13<br/>Ma-Mel-18<br/>Ma-Mel-22<br/>Ma-Mel-33<br/>Ma-Mel-36<br/>Ma-Mel-37<br/>UKRV-Mel-06<br/>UKRV-Mel-10<br/>UKRV-M</td>
+<td align="center">12/15 (80%)</td><td align="center">RT-PCR</td>
+<td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=12932233" target="_blank">12932233</a></td></tr>
 <tr class="colorful"><td>Melanoma stem cells (MSC)</td><td align="center">WM115-NA<br/>WM1972-NA<br/>WM1976-NA<br/>WM3130-NA</td>
 <td align="center">4/4 (100%)</td><td align="center">RT-PCR</td>
 <td align="center"><a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed&amp;cmd=Retrieve&amp;dopt=Citation&amp;list_uids=18205182" target="_blank">18205182</a></td></tr>
