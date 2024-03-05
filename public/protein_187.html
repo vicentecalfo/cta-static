@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="verify-v1" content="h1KdvfH5e7dYVVeJGr8Pn0aGKQCTCOM+HQ2IKdA4snI=" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<title>CTpedia</title>
+<link href="http://www.cta.lncc.br/styles/stylepage.css"" rel="stylesheet" type="text/css" title="Estilos de layout."/>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47755155-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-47755155-3');
+</script>
+<script type="text/javascript" src="http://www.cta.lncc.br/styles/library.js"></script>
+<script type="text/javascript" src="http://www.cta.lncc.br/styles/javascript.js"></script>
+<script type="text/javascript" src="http://www.cta.lncc.br/styles/autocomplet.js"></script>
+<script type="text/javascript" src="http://www.cta.lncc.br/styles/expandTables.js"></script>
+<script type="text/javascript">
+function show_libs_details(type ,id ,len){
+    window.open('heatmaps/show_libs_sage.php?type='+type+'&id='+id+'&len='+len ,'lib','height = 350 ,width = 450,resizable=yes,toolbar=yes,scrollbars=yes');
+
+}
+
+function show_libs(gene,tissue,type,len,state){
+  if(type=="sage" || type=="mpss" ){
+      window.open("heatmaps/heatmap_tag.php?state="+state+"&amp;type="+type+"&amp;len="+len+"&amp;gene="+gene+"&amp;libs_tissue="+tissue,"lib","height = 500 ,width = 500,resizable=yes,toolbar=yes,scrollbars=yes");
+    }
+  else{
+     window.open('heatmaps/show_libs_est.php?state='+state+'&gene='+gene+'&libs_tissue='+tissue,'est','height = 500 ,width = 500,resizable=yes,toolbar=yes,scrollbars=yes');
+    }
+}
+
+function show_libs_tr(gene,tissue,type,len,state){
+  if(type=="sage" || type=="mpss" ){
+      window.open("heatmaps/heatmap_tag.php?state="+state+"&amp;type="+type+"&amp;len="+len+"&amp;gene="+gene+"&amp;libs_tissue="+tissue,"lib","height = 500 ,width = 500,resizable=yes,toolbar=yes,scrollbars=yes");
+    }
+  else{
+     window.open('heatmaps/show_libs_est.php?state='+state+'&amp;gene='+gene+'&amp;libs_tissue='+tissue,'est','height = 500 ,width = 500,resizable=yes,toolbar=yes,scrollbars=yes');
+    }
+}
+
+</script>
+</head><body>
+ <div id="nav">
+ <h1><span class="bluelight">CT</span>Database</h1>
+ </div>
+ <div  id ="menuprincipal" class="tabmenu2">
+ <ul>
+  <li><a href="index.html">Project</a></li>
+  <li><a href="participants.html">Participants</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="gene_annotations.html">Gene annotations</a></li></ul>
+ </div>
+<div id="wrapper">
+ <div id="leftnav">
+
+ <div class="utility">
+  <strong>Text size:</strong>
+  &nbsp;<a href="javascript:increaseFontSize();"><img src="http://www.cta.lncc.br/img/amais.gif" alt="Bigger text" class="middleimg"/></a>
+  <a href="javascript:decreaseFontSize();"><img src="http://www.cta.lncc.br/img/amenos.gif" alt="Smaller text" class="middleimg"/></a>
+  <a href="javascript:defaultFontSize();"><img src="http://www.cta.lncc.br/img/default.gif" alt="Smaller text" class="middleimg"/></a>
+  </div><div class="section">
+<h1 class="user">User logged:</h1>
+
+        <span class="logger"></span><br/>
+
+        <span class="logger"></span>
+
+        <br/>
+
+        <a href="modelo.php?logout=1" class="logout">Logout</a><br />
+
+        <a href="#" class="info" onClick="window.open('newpass.php','newpass','width=500,height=500,menubar=no,location=no,scrollbars=no');return false;">Change password</a>
+</div>
+<div class="section">
+<h1>List of genes:</h1><ul><li id="n0"><a href="javascript:showHideElement('A');" title="Click to open menu" class="hasgenes">A</a>
+<ul class="genes" style="display:none;"id="A">
+<li><a href="summary_78.html"class="alias">ACRBP<span>Alias:OY-TES-1, SP32</span></a></li>
+<li><a href="summary_107.html"class="alias">ACTL8</a></li>
+<li><a href="summary_159.html"class="alias">ADAM2<span>Alias:CRYN1, CRYN2, FTNB, PH-30b, PH30</span></a></li>
+<li><a href="summary_43.html"class="alias">ADAM29<span>Alias:svph1</span></a></li>
+<li><a href="summary_41.html"class="alias">AKAP3<span>Alias:AKAP110, FSP95, PRKA3, SOB1</span></a></li>
+<li><a href="summary_234.html"class="alias">AKAP4</a></li>
+<li><a href="summary_259.html"class="alias">ANKRD45</a></li>
+<li><a href="summary_92.html"class="alias">ARMC3<span>Alias:FLJ25845, FLJ32827, RP11-300B11.1</span></a></li>
+<li><a href="summary_264.html"class="alias">ARX</a></li>
+<li><a href="summary_285.html"class="alias">ATAD2</a></li>
+</ul></li>
+</ul>
+<ul><li id="n1"><a href="javascript:showHideElement('B');" title="Click to open menu" class="hasgenes">B</a>
+<ul class="genes" style="display:none;"id="B">
+<li><a href="summary_2.html"class="alias">BAGE<span>Alias:BAGE1</span></a></li>
+<li><a href="summary_83.html"class="alias">BAGE2</a></li>
+<li><a href="summary_82.html"class="alias">BAGE3</a></li>
+<li><a href="summary_81.html"class="alias">BAGE4</a></li>
+<li><a href="summary_80.html"class="alias">BAGE5</a></li>
+<li><a href="summary_3.html"class="alias">BRDT<span>Alias:BRD6</span></a></li>
+</ul></li>
+</ul>
+<ul><li id="n2"><a href="javascript:showHideElement('C');" title="Click to open menu" class="hasgenes">C</a>
+<ul class="genes" style="display:none;"id="C">
+<li><a href="summary_295.html"class="alias">C15orf60</a></li>
+<li><a href="summary_119.html"class="alias">C21orf99<span>Alias:CTSP1</span></a></li>
+<li><a href="summary_131.html"class="alias">CABYR<span>Alias:CBP86, FSP-2, MGC9117</span></a></li>
+<li><a href="summary_229.html"class="alias">CAGE1<span>Alias:bA69L16.7, CTAG3, FLJ40441</span></a></li>
+<li><a href="summary_224.html"class="alias">CALR3<span>Alias:CRT2, FLJ25355, MGC26577</span></a></li>
+<li><a href="summary_66.html"class="alias">CASC5<span>Alias:AF15Q14, D40, KIAA1570</span></a></li>
+<li><a href="summary_128.html"class="alias">CCDC110<span>Alias:KM-HN-1, KMHN1, MGC33607</span></a></li>
+<li><a href="summary_74.html"class="alias">CCDC33<span>Alias:FLJ23168, FLJ32855, MGC34145</span></a></li>
+<li><a href="summary_97.html"class="alias">CCDC36<span>Alias:FLJ25320</span></a></li>
+<li><a href="summary_251.html"class="alias">CCDC62</a></li>
+<li><a href="summary_296.html"class="alias">CCDC83</a></li>
+<li><a href="summary_248.html"class="alias">CDCA1</a></li>
+<li><a href="summary_75.html"class="alias">CEP290<span>Alias:3H11Ag, FLJ13615, FLJ21979, JBTS5, JBTS6, KIAA0373, LCA10, MKS4, NPHP6, rd16, SLSN6</span></a></li>
+<li><a href="summary_253.html"class="alias">CEP55</a></li>
+<li><a href="summary_112.html"class="alias">COX6B2<span>Alias:COXVIB2, MGC119094</span></a></li>
+<li><a href="summary_55.html"class="alias">CPXCR1</a></li>
+<li><a href="summary_31.html"class="alias">CRISP2<span>Alias:CRISP-2, GAPDL5, MGC111136, TPX1, TSP1</span></a></li>
+<li><a href="summary_120.html"class="alias">CSAG1<span>Alias:CSAGE</span></a></li>
+<li><a href="summary_37.html"class="alias">CSAG2<span>Alias:MGC149851, MGC149852, TRAG3</span></a></li>
+<li><a href="summary_198.html"class="alias">CSAG3B<span>Alias:CSAG2</span></a></li>
+<li><a href="summary_196.html"class="alias">CT16.2</a></li>
+<li><a href="summary_202.html"class="alias">CT45A1</a></li>
+<li><a href="summary_226.html"class="alias">CT45A2<span>Alias:CT45A2</span></a></li>
+<li><a href="summary_203.html"class="alias">CT45A3<span>Alias:CT45A3, RP13-36C9.1</span></a></li>
+<li><a href="summary_204.html"class="alias">CT45A4</a></li>
+<li><a href="summary_205.html"class="alias">CT45A5<span>Alias:CT45A5</span></a></li>
+<li><a href="summary_206.html"class="alias">CT45A6</a></li>
+<li><a href="summary_161.html"class="alias">CT47A1<span>Alias:CT47.1</span></a></li>
+<li><a href="summary_168.html"class="alias">CT47A10<span>Alias:CT47.10</span></a></li>
+<li><a href="summary_169.html"class="alias">CT47A11<span>Alias:CT47.11</span></a></li>
+<li><a href="summary_162.html"class="alias">CT47A2<span>Alias:CT47.2</span></a></li>
+<li><a href="summary_163.html"class="alias">CT47A3<span>Alias:CT47.3</span></a></li>
+<li><a href="summary_164.html"class="alias">CT47A4<span>Alias:CT47.4</span></a></li>
+<li><a href="summary_165.html"class="alias">CT47A5<span>Alias:CT47.5</span></a></li>
+<li><a href="summary_166.html"class="alias">CT47A6<span>Alias:CT47.6</span></a></li>
+<li><a href="summary_170.html"class="alias">CT47A7</a></li>
+<li><a href="summary_171.html"class="alias">CT47A8</a></li>
+<li><a href="summary_167.html"class="alias">CT47A9<span>Alias:CT47.9</span></a></li>
+<li><a href="summary_172.html"class="alias">CT47B1</a></li>
+<li><a href="summary_211.html"class="alias">CT66<br />AA884595</a></li>
+<li><a href="summary_212.html"class="alias">CT69<br />BC040308</a></li>
+<li><a href="summary_213.html"class="alias">CT70<br />BI818097</a></li>
+<li><a href="summary_132.html"class="alias">CTAG1A<span>Alias:ESO1, LAGE2A</span></a></li>
+<li><a href="summary_101.html"class="alias">CTAG1B<span>Alias:CTAG, CTAG1, ESO1, LAGE-2, LAGE2B, NY-ESO-1</span></a></li>
+<li><a href="summary_50.html"class="alias">CTAG2<span>Alias:ESO2, LAGE-1, LAGE-2b, MGC138724, MGC3803</span></a></li>
+<li><a href="summary_225.html"class="alias">CTAGE-2</a></li>
+<li><a href="summary_73.html"class="alias">CTAGE1<span>Alias:CTAGE-1, CTAGE-2</span></a></li>
+<li><a href="summary_133.html"class="alias">CTAGE5<span>Alias:MEA6, MGEA, MGEA11, MGEA6</span></a></li>
+<li><a href="summary_88.html"class="alias">CTCFL<span>Alias:BORIS, CTCF-T, dJ579F20.2, MGC163358</span></a></li>
+<li><a href="summary_256.html"class="alias">CTNNA2</a></li>
+<li><a href="summary_58.html"class="alias">CXorf48<span>Alias:FLJ20527, RP13-565O16.1</span></a></li>
+<li><a href="summary_134.html"class="alias">Cxorf61<span>Alias:FLJ20611, FLJ22913, KK-LC-1, RP3-452H17.2</span></a></li>
+<li><a href="summary_294.html"class="alias">cyclin A1</a></li>
+</ul></li>
+</ul>
+<ul><li id="n3"><a href="javascript:showHideElement('D');" title="Click to open menu" class="hasgenes">D</a>
+<ul class="genes" style="display:none;"id="D">
+<li><a href="summary_237.html"class="alias">DCAF12</a></li>
+<li><a href="summary_60.html"class="alias">DDX43<span>Alias:DKFZp434H2114, HAGE</span></a></li>
+<li><a href="summary_94.html"class="alias">DDX53<span>Alias:CAGE</span></a></li>
+<li><a href="summary_105.html"class="alias">DKKL1<span>Alias:SGY, SGY-1, SGY1</span></a></li>
+<li><a href="summary_304.html"class="alias">DMRT1</a></li>
+<li><a href="summary_306.html"class="alias">DNAJB8</a></li>
+<li><a href="summary_235.html"class="alias">DPPA2</a></li>
+<li><a href="summary_79.html"class="alias">DSCR8<span>Alias:C21orf65, MMA-1, MTAG2</span></a></li>
+</ul></li>
+</ul>
+<ul><li id="n4"><a href="javascript:showHideElement('E');" title="Click to open menu" class="hasgenes">E</a>
+<ul class="genes" style="display:none;"id="E">
+<li><a href="summary_305.html"class="alias">EDAG, NDR</a></li>
+<li><a href="summary_260.html"class="alias">ELOVL4</a></li>
+</ul></li>
+</ul>
+<ul><li id="n5"><a href="javascript:showHideElement('F');" title="Click to open menu" class="hasgenes">F</a>
+<ul class="genes" style="display:none;"id="F">
+<li><a href="summary_257.html"class="alias">FAM133A</a></li>
+<li><a href="summary_254.html"class="alias">FAM46D</a></li>
+<li><a href="summary_84.html"class="alias">FATE1<span>Alias:FATE</span></a></li>
+<li><a href="summary_292.html"class="alias">FBXO39</a></li>
+<li><a href="summary_121.html"class="alias">FMR1NB<span>Alias:FLJ25736, NY-SAR-35</span></a></li>
+<li><a href="summary_200.html"class="alias">FTHL17</a></li>
+</ul></li>
+</ul>
+<ul><li id="n6"><a href="javascript:showHideElement('G');" title="Click to open menu" class="hasgenes">G</a>
+<ul class="genes" style="display:none;"id="G">
+<li><a href="summary_1.html"class="alias">GAGE1<span>Alias:MGC33825</span></a></li>
+<li><a href="summary_178.html"class="alias">GAGE12B</a></li>
+<li><a href="summary_179.html"class="alias">GAGE12C</a></li>
+<li><a href="summary_180.html"class="alias">GAGE12D<span>Alias:MGC163246</span></a></li>
+<li><a href="summary_181.html"class="alias">GAGE12E</a></li>
+<li><a href="summary_182.html"class="alias">GAGE12F</a></li>
+<li><a href="summary_183.html"class="alias">GAGE12G<span>Alias:MGC132611, RP11-959H17.6</span></a></li>
+<li><a href="summary_184.html"class="alias">GAGE12H<span>Alias:RP11-959H17.7</span></a></li>
+<li><a href="summary_135.html"class="alias">GAGE12I<span>Alias:AL4, CT4.7, GAGE7B</span></a></li>
+<li><a href="summary_176.html"class="alias">GAGE12J<span>Alias:GAGE11</span></a></li>
+<li><a href="summary_177.html"class="alias">GAGE13<span>Alias:GAGE12A</span></a></li>
+<li><a href="summary_103.html"class="alias">GAGE2A<span>Alias:CT4.2, GAGE2, MGC120097, MGC96883, MGC96930, MGC96942</span></a></li>
+<li><a href="summary_174.html"class="alias">GAGE3</a></li>
+<li><a href="summary_5.html"class="alias">GAGE4<span>Alias:GAGE5</span></a></li>
+<li><a href="summary_6.html"class="alias">GAGE5</a></li>
+<li><a href="summary_175.html"class="alias">GAGE6</a></li>
+<li><a href="summary_8.html"class="alias">GAGE7<span>Alias:GAGE-7</span></a></li>
+<li><a href="summary_46.html"class="alias">GAGE8</a></li>
+<li><a href="summary_246.html"class="alias">GOLGAGL2 FA</a></li>
+<li><a href="summary_266.html"class="alias">GPAT2</a></li>
+<li><a href="summary_252.html"class="alias">GPATCH2</a></li>
+</ul></li>
+</ul>
+<ul><li id="n7"><a href="javascript:showHideElement('H');" title="Click to open menu" class="hasgenes">H</a>
+<ul class="genes" style="display:none;"id="H">
+<li><a href="summary_299.html"class="alias">HIWI, MIWI, PIWI</a></li>
+<li><a href="summary_77.html"class="alias">HORMAD1<span>Alias:DKFZP434A1315, NOHMA, RP11-363I22.1</span></a></li>
+<li><a href="summary_297.html"class="alias">HORMAD2</a></li>
+<li><a href="summary_111.html"class="alias">HSPB9<span>Alias:FLJ27437</span></a></li>
+</ul></li>
+</ul>
+<ul><li id="n8"><a href="javascript:showHideElement('I');" title="Click to open menu" class="hasgenes">I</a>
+<ul class="genes" style="display:none;"id="I">
+<li><a href="summary_261.html"class="alias">IGSF11</a></li>
+<li><a href="summary_230.html"class="alias">IL13RA2</a></li>
+<li><a href="summary_233.html"class="alias">IMP-3</a></li>
+</ul></li>
+</ul>
+<ul><li id="n9"><a href="javascript:showHideElement('J');" title="Click to open menu" class="hasgenes">J</a>
+<ul class="genes" style="display:none;"id="J">
+<li><a href="summary_42.html"class="alias">JARID1B<span>Alias:FLJ10538, FLJ12459, FLJ12491, FLJ16281, FLJ23670, KDM5B, PLU-1, PUT1, RBBP2H1A</span></a></li>
+</ul></li>
+</ul>
+<ul><li id="n10"><a href="javascript:showHideElement('K');" title="Click to open menu" class="hasgenes">K</a>
+<ul class="genes" style="display:none;"id="K">
+<li><a href="summary_236.html"class="alias">KIAA0100</a></li>
+</ul></li>
+</ul>
+<ul><li id="n11"><a href="javascript:showHideElement('L');" title="Click to open menu" class="hasgenes">L</a>
+<ul class="genes" style="display:;" id="L">
+<li><a href="summary_187.html"class="alias">LAGE-1b</a></li>
+<li><a href="summary_10.html"class="alias">LDHC<span>Alias:LDH3, LDHX, MGC111073</span></a></li>
+<li><a href="summary_109.html"class="alias">LEMD1<span>Alias:LEMP-1</span></a></li>
+<li><a href="summary_93.html"class="alias">LIPI<span>Alias:LPDL, PRED5</span></a></li>
+<li><a href="summary_258.html"class="alias">LOC130576</a></li>
+<li><a href="summary_209.html"class="alias">LOC196993</a></li>
+<li><a href="summary_208.html"class="alias">LOC348120</a></li>
+<li><a href="summary_214.html"class="alias">LOC440934</a></li>
+<li><a href="summary_210.html"class="alias">LOC647107</a></li>
+<li><a href="summary_216.html"class="alias">LOC728137</a></li>
+<li><a href="summary_51.html"class="alias">LUZP4<span>Alias:CT-8, CT28, HOM-TES-85</span></a></li>
+<li><a href="summary_232.html"class="alias">LY6K</a></li>
+</ul></li>
+</ul>
+<ul><li id="n12"><a href="javascript:showHideElement('M');" title="Click to open menu" class="hasgenes">M</a>
+<ul class="genes" style="display:none;"id="M">
+<li><a href="summary_271.html"class="alias">MAEL</a></li>
+<li><a href="summary_11.html"class="alias">MAGEA1<span>Alias:MAGE1, MGC9326</span></a></li>
+<li><a href="summary_19.html"class="alias">MAGEA10<span>Alias:MAGE10, MGC10599</span></a></li>
+<li><a href="summary_20.html"class="alias">MAGEA11<span>Alias:MAGE-11, MAGE11, MAGEA-11, MGC10511</span></a></li>
+<li><a href="summary_21.html"class="alias">MAGEA12<span>Alias:MAGE12</span></a></li>
+<li><a href="summary_12.html"class="alias">MAGEA2<span>Alias:MAGE2, MAGEA2A, MGC131923</span></a></li>
+<li><a href="summary_95.html"class="alias">MAGEA2B<span>Alias:MAGE2, MAGEA2, MGC16973</span></a></li>
+<li><a href="summary_13.html"class="alias">MAGEA3<span>Alias:HIP8, HYPD, MAGE3, MGC14613</span></a></li>
+<li><a href="summary_14.html"class="alias">MAGEA4<span>Alias:MAGE-41, MAGE-X2, MAGE4, MAGE4A, MAGE4B, MGC21336</span></a></li>
+<li><a href="summary_15.html"class="alias">MAGEA5<span>Alias:MAGE5, MGC129526</span></a></li>
+<li><a href="summary_16.html"class="alias">MAGEA6<span>Alias:MAGE-3b, MAGE3B, MAGE6, MGC52297</span></a></li>
+<li><a href="summary_17.html"class="alias">MAGEA8<span>Alias:MAGE8, MGC2182</span></a></li>
+<li><a href="summary_18.html"class="alias">MAGEA9<span>Alias:MAGE9, MGC8421</span></a></li>
+<li><a href="summary_173.html"class="alias">MAGEA9B<br />LOC728269</a></li>
+<li><a href="summary_22.html"class="alias">MAGEB1<span>Alias:DAM10, MAGE-Xp, MAGEL1, MGC9322</span></a></li>
+<li><a href="summary_23.html"class="alias">MAGEB2<span>Alias:DAM6, MAGE-XP-2, MGC26438</span></a></li>
+<li><a href="summary_136.html"class="alias">MAGEB3</a></li>
+<li><a href="summary_137.html"class="alias">MAGEB4<span>Alias:MGC33144</span></a></li>
+<li><a href="summary_34.html"class="alias">MAGEB5<span>Alias:MAGE-B5</span></a></li>
+<li><a href="summary_122.html"class="alias">MAGEB6<span>Alias:FLJ40242, MAGE-B6, MAGEB6A</span></a></li>
+<li><a href="summary_39.html"class="alias">MAGEC1<span>Alias:CT7, MAGE-C1, MGC39366</span></a></li>
+<li><a href="summary_54.html"class="alias">MAGEC2<span>Alias:CT10, HCA587, MGC13377</span></a></li>
+<li><a href="summary_114.html"class="alias">MAGEC3<span>Alias:HCA2, MAGE-C3, MAGEC4, MGC119270, MGC119271</span></a></li>
+<li><a href="summary_287.html"class="alias">MCAK</a></li>
+<li><a href="summary_199.html"class="alias">MMA1b</a></li>
+<li><a href="summary_47.html"class="alias">MORC1<span>Alias:MORC, ZCW6</span></a></li>
+<li><a href="summary_139.html"class="alias">MPHOSPH1<span>Alias:DKFZp434B0435, DKFZp434P0810, KRMP1, MPP-1, MPP1</span></a></li>
+</ul></li>
+</ul>
+<ul><li id="n13"><a href="javascript:showHideElement('N');" title="Click to open menu" class="hasgenes">N</a>
+<ul class="genes" style="display:none;"id="N">
+<li><a href="summary_118.html"class="alias">NLRP4<span>Alias:CLR19.5, FLJ32126, NALP4, PAN2, PYPAF4, RNH2</span></a></li>
+<li><a href="summary_268.html"class="alias">NOL4</a></li>
+<li><a href="summary_300.html"class="alias">NR6A1</a></li>
+<li><a href="summary_63.html"class="alias">NXF2<span>Alias:FLJ20416, TAPL-2</span></a></li>
+<li><a href="summary_201.html"class="alias">NXF2B<span>Alias:bA353J17.1</span></a></li>
+<li><a href="summary_101.html"class="alias">NY-ESO-1<span>Alias:CTAG, CTAG1, ESO1, LAGE-2, LAGE2B, NY-ESO-1</span></a></li>
+</ul></li>
+</ul>
+<ul><li id="n14"><a href="javascript:showHideElement('O');" title="Click to open menu" class="hasgenes">O</a>
+<ul class="genes" style="display:none;"id="O">
+<li><a href="summary_278.html"class="alias">ODF1</a></li>
+<li><a href="summary_279.html"class="alias">ODF2</a></li>
+<li><a href="summary_280.html"class="alias">ODF3</a></li>
+<li><a href="summary_281.html"class="alias">ODF4</a></li>
+<li><a href="summary_44.html"class="alias">OIP5<span>Alias:5730547N13Rik, LINT-25, MIS18beta</span></a></li>
+<li><a href="summary_250.html"class="alias">OTOA</a></li>
+</ul></li>
+</ul>
+<ul><li id="n15"><a href="javascript:showHideElement('P');" title="Click to open menu" class="hasgenes">P</a>
+<ul class="genes" style="display:none;"id="P">
+<li><a href="summary_140.html"class="alias">PAGE1<span>Alias:GAGE-9, GAGEB1, PAGE-1</span></a></li>
+<li><a href="summary_141.html"class="alias">PAGE2<span>Alias:GAGEC2, GAGEE2, MGC62094, PAGE-2</span></a></li>
+<li><a href="summary_130.html"class="alias">PAGE2B<span>Alias:GAGEE3</span></a></li>
+<li><a href="summary_142.html"class="alias">PAGE3<span>Alias:GAGED1, PAGE-3</span></a></li>
+<li><a href="summary_143.html"class="alias">PAGE4<span>Alias:FLJ35184, GAGEC1, JM27, PAGE-4</span></a></li>
+<li><a href="summary_85.html"class="alias">PAGE5<span>Alias:GAGEE1, PAGE-5</span></a></li>
+<li><a href="summary_115.html"class="alias">PASD1</a></li>
+<li><a href="summary_62.html"class="alias">PBK<span>Alias:FLJ14385, Nori-3, SPK, TOPK</span></a></li>
+<li><a href="summary_249.html"class="alias">PEPP2</a></li>
+<li><a href="summary_59.html"class="alias">PIWIL2<span>Alias:FLJ10351, HILI, MGC133049, mili, PIWIL1L</span></a></li>
+<li><a href="summary_223.html"class="alias">PLAC1</a></li>
+<li><a href="summary_241.html"class="alias">POTEA</a></li>
+<li><a href="summary_242.html"class="alias">POTEB</a></li>
+<li><a href="summary_244.html"class="alias">POTEC</a></li>
+<li><a href="summary_239.html"class="alias">POTED</a></li>
+<li><a href="summary_240.html"class="alias">POTEE</a></li>
+<li><a href="summary_243.html"class="alias">POTEG</a></li>
+<li><a href="summary_245.html"class="alias">POTEH</a></li>
+<li><a href="summary_275.html"class="alias">PRAME</a></li>
+<li><a href="summary_247.html"class="alias">PRM1</a></li>
+<li><a href="summary_228.html"class="alias">PRM2<span>Alias:FLJ27447</span></a></li>
+<li><a href="summary_126.html"class="alias">PRSS54<span>Alias:FLJ25339, Klkbl4</span></a></li>
+<li><a href="summary_303.html"class="alias">PRSS55</a></li>
+<li><a href="summary_269.html"class="alias">PTPN20A</a></li>
+</ul></li>
+</ul>
+<ul><li id="n16"><a href="javascript:showHideElement('Q');" title="Click to open menu">Q</a></li>
+</ul>
+<ul><li id="n17"><a href="javascript:showHideElement('R');" title="Click to open menu" class="hasgenes">R</a>
+<ul class="genes" style="display:none;"id="R">
+<li><a href="summary_123.html"class="alias">RBM46<span>Alias:MGC27016</span></a></li>
+<li><a href="summary_293.html"class="alias">RGS22</a></li>
+<li><a href="summary_144.html"class="alias">ROPN1<span>Alias:DKFZp434B1222, ODF6, RHPNAP1, ROPN1A, ropporin</span></a></li>
+<li><a href="summary_272.html"class="alias">RQCD1</a></li>
+</ul></li>
+</ul>
+<ul><li id="n18"><a href="javascript:showHideElement('S');" title="Click to open menu" class="hasgenes">S</a>
+<ul class="genes" style="display:none;"id="S">
+<li><a href="summary_61.html"class="alias">SAGE1<span>Alias:SAGE</span></a></li>
+<li><a href="summary_238.html"class="alias">SEMG1</a></li>
+<li><a href="summary_113.html"class="alias">SLCO6A1<span>Alias:GST, MGC26949, OATP6A1, OATPY</span></a></li>
+<li><a href="summary_56.html"class="alias">SPA17<span>Alias:SP17, SP17-1</span></a></li>
+<li><a href="summary_86.html"class="alias">SPACA3<span>Alias:1700025M08Rik, ALLP17, LYC3, LYZL3, MGC119058, SLLP1</span></a></li>
+<li><a href="summary_288.html"class="alias">SPAG1</a></li>
+<li><a href="summary_291.html"class="alias">SPAG17</a></li>
+<li><a href="summary_270.html"class="alias">SPAG4</a></li>
+<li><a href="summary_289.html"class="alias">SPAG6</a></li>
+<li><a href="summary_290.html"class="alias">SPAG8</a></li>
+<li><a href="summary_146.html"class="alias">SPAG9<span>Alias:FLJ13450, FLJ14006, FLJ26141, FLJ34602, HLC4, HSS, JLP, KIAA0516, MGC117291, MGC14967, MGC74461, PHET, PIG6</span></a></li>
+<li><a href="summary_49.html"class="alias">SPANXA1<span>Alias:NAP-X, SPAN-Xa, SPAN-Xb, SPANX, SPANX-A2, SPANXA2</span></a></li>
+<li><a href="summary_147.html"class="alias">SPANXA2<span>Alias:SPANX, SPANXA</span></a></li>
+<li><a href="summary_71.html"class="alias">SPANXB1<span>Alias:SPANX-B, SPANXB</span></a></li>
+<li><a href="summary_188.html"class="alias">SPANXB2<span>Alias:SPANX, SPANXB</span></a></li>
+<li><a href="summary_72.html"class="alias">SPANXC<span>Alias:CTp11, SPANX-C</span></a></li>
+<li><a href="summary_70.html"class="alias">SPANXD<span>Alias:dJ171K16.1, MGC119769, SPANX-D</span></a></li>
+<li><a href="summary_91.html"class="alias">SPANXE</a></li>
+<li><a href="summary_148.html"class="alias">SPANXN1<span>Alias:SPANX-N1</span></a></li>
+<li><a href="summary_149.html"class="alias">SPANXN2<span>Alias:SPANX-N2</span></a></li>
+<li><a href="summary_150.html"class="alias">SPANXN3<span>Alias:SPANX-N3</span></a></li>
+<li><a href="summary_151.html"class="alias">SPANXN4<span>Alias:SPANX-N4</span></a></li>
+<li><a href="summary_152.html"class="alias">SPANXN5<span>Alias:SPANX-N5</span></a></li>
+<li><a href="summary_277.html"class="alias">SPATA19</a></li>
+<li><a href="summary_265.html"class="alias">SPEF2</a></li>
+<li><a href="summary_67.html"class="alias">SPINLW1<span>Alias:dJ461P17.2, EPPIN, EPPIN1, EPPIN2, EPPIN3, WAP7, WFDC7</span></a></li>
+<li><a href="summary_45.html"class="alias">SPO11<span>Alias:MGC39953</span></a></li>
+<li><a href="summary_26.html"class="alias">SSX1<span>Alias:MGC150425, MGC5162, SSRC</span></a></li>
+<li><a href="summary_27.html"class="alias">SSX2<span>Alias:HD21, HOM-MEL-40, MGC119055, MGC15364, MGC3884, SSX</span></a></li>
+<li><a href="summary_185.html"class="alias">SSX2b</a></li>
+<li><a href="summary_40.html"class="alias">SSX3<span>Alias:MGC119054, MGC14495</span></a></li>
+<li><a href="summary_28.html"class="alias">SSX4<span>Alias:MGC119056, MGC12411</span></a></li>
+<li><a href="summary_186.html"class="alias">SSX4B</a></li>
+<li><a href="summary_153.html"class="alias">SSX5<span>Alias:MGC9494</span></a></li>
+<li><a href="summary_154.html"class="alias">SSX6<span>Alias:dJ54B20.1</span></a></li>
+<li><a href="summary_155.html"class="alias">SSX7</a></li>
+<li><a href="summary_156.html"class="alias">SSX9</a></li>
+<li><a href="summary_110.html"class="alias">SYCE1<span>Alias:bA108K14.6, C10orf94, RP11-108K14.6</span></a></li>
+<li><a href="summary_29.html"class="alias">SYCP1<span>Alias:HOM-TES-14, MGC104417, SCP1</span></a></li>
+</ul></li>
+</ul>
+<ul><li id="n19"><a href="javascript:showHideElement('T');" title="Click to open menu" class="hasgenes">T</a>
+<ul class="genes" style="display:none;"id="T">
+<li><a href="summary_57.html"class="alias">TAF7L<span>Alias:dJ738A13.1, FLJ23157, TAF2Q</span></a></li>
+<li><a href="summary_207.html"class="alias">TAG</a></li>
+<li><a href="summary_65.html"class="alias">TDRD1<span>Alias:FLJ21082</span></a></li>
+<li><a href="summary_286.html"class="alias">TDRD4</a></li>
+<li><a href="summary_127.html"class="alias">TDRD6<span>Alias:bA446F17.4, DKFZp781I1148, FLJ43850, NY-CO-45, TDR2</span></a></li>
+<li><a href="summary_298.html"class="alias">TEKT5</a></li>
+<li><a href="summary_276.html"class="alias">TEX101</a></li>
+<li><a href="summary_255.html"class="alias">TEX14</a></li>
+<li><a href="summary_64.html"class="alias">TEX15<span>Alias:DKFZP434M2415</span></a></li>
+<li><a href="summary_52.html"class="alias">TFDP3<span>Alias:CT30, E2F-like, HCA661, MGC161639</span></a></li>
+<li><a href="summary_53.html"class="alias">THEG<span>Alias:MGC26138</span></a></li>
+<li><a href="summary_262.html"class="alias">TMEFF1</a></li>
+<li><a href="summary_263.html"class="alias">TMEFF2</a></li>
+<li><a href="summary_267.html"class="alias">TMEM108</a></li>
+<li><a href="summary_301.html"class="alias">TMPRSS12</a></li>
+<li><a href="summary_302.html"class="alias">TPPP2</a></li>
+<li><a href="summary_30.html"class="alias">TPTE<span>Alias:PTEN2</span></a></li>
+<li><a href="summary_157.html"class="alias">TSGA10<span>Alias:CEP4L</span></a></li>
+<li><a href="summary_48.html"class="alias">TSP50</a></li>
+<li><a href="summary_217.html"class="alias">TSPY1D</a></li>
+<li><a href="summary_218.html"class="alias">TSPY1E</a></li>
+<li><a href="summary_219.html"class="alias">TSPY1F</a></li>
+<li><a href="summary_220.html"class="alias">TSPY1G</a></li>
+<li><a href="summary_221.html"class="alias">TSPY1H</a></li>
+<li><a href="summary_222.html"class="alias">TSPY1I</a></li>
+<li><a href="summary_215.html"class="alias">TSPY2<span>Alias:MGC103998, TSPYQ1</span></a></li>
+<li><a href="summary_32.html"class="alias">TSPY3<span>Alias:DYS14, pJA923, TSPY</span></a></li>
+<li><a href="summary_76.html"class="alias">TSSK6<span>Alias:FLJ24002, SSTK, TSSK4</span></a></li>
+<li><a href="summary_231.html"class="alias">TTK</a></li>
+<li><a href="summary_33.html"class="alias">TULP2<span>Alias:TUBL2</span></a></li>
+</ul></li>
+</ul>
+<ul><li id="n20"><a href="javascript:showHideElement('U');" title="Click to open menu">U</a></li>
+</ul>
+<ul><li id="n21"><a href="javascript:showHideElement('V');" title="Click to open menu" class="hasgenes">V</a>
+<ul class="genes" style="display:none;"id="V">
+<li><a href="summary_197.html"class="alias">VENTXP1<span>Alias:NA88A, VENTX2P1</span></a></li>
+</ul></li>
+</ul>
+<ul><li id="n22"><a href="javascript:showHideElement('W');" title="Click to open menu">W</a></li>
+</ul>
+<ul><li id="n23"><a href="javascript:showHideElement('X');" title="Click to open menu" class="hasgenes">X</a>
+<ul class="genes" style="display:none;"id="X">
+<li><a href="summary_194.html"class="alias">XAGE-3b</a></li>
+<li><a href="summary_195.html"class="alias">XAGE-4<br />RP11-167P23.2<span>Alias:XAGE-4</span></a></li>
+<li><a href="summary_36.html"class="alias">XAGE1<span>Alias:GAGED2, XAGE-1</span></a></li>
+<li><a href="summary_189.html"class="alias">XAGE1B</a></li>
+<li><a href="summary_190.html"class="alias">XAGE1C</a></li>
+<li><a href="summary_191.html"class="alias">XAGE1D</a></li>
+<li><a href="summary_192.html"class="alias">XAGE1E</a></li>
+<li><a href="summary_35.html"class="alias">XAGE2<span>Alias:GAGED3, XAGE-2</span></a></li>
+<li><a href="summary_193.html"class="alias">XAGE2B<br />CTD-2267G17.3<span>Alias:LOC728242</span></a></li>
+<li><a href="summary_89.html"class="alias">XAGE3<span>Alias:GAGED4, MGC71925, PLAC6, pp9012, XAGE-3</span></a></li>
+<li><a href="summary_158.html"class="alias">XAGE5<span>Alias:GAGED5, MGC119799, MGC119800, XAGE-5</span></a></li>
+</ul></li>
+</ul>
+<ul><li id="n24"><a href="javascript:showHideElement('Y');" title="Click to open menu">Y</a></li>
+</ul>
+<ul><li id="n25"><a href="javascript:showHideElement('Z');" title="Click to open menu" class="hasgenes">Z</a>
+<ul class="genes" style="display:none;"id="Z">
+<li><a href="summary_104.html"class="alias">ZNF165<span>Alias:LD65, ZSCAN7</span></a></li>
+<li><a href="summary_283.html"class="alias">ZNF645</a></li>
+</ul></li>
+</ul>
+</div></div><!--fim #left nav--><div id="line1" class="ddcolortabs">
+<ul>
+<li><a href="summary_187.html">Summary</a></li>
+<li><a href="mrna_expression_187.html"> mRNA expression</a></li>
+</ul></div><div id="content"><h1 id="location">Protein</h1>
+<p><h2>Gene:&nbsp;</h2><strong>LAGE-1b</strong>&nbsp;(official gene symbol)
+</p>
+<p><h2>Other symbol:&nbsp;</h2><strong>LAGE-1b</strong></p>
+<p><h2>CT family:&nbsp;</h2><strong>CT6</strong>&nbsp;
+   <h2>CT identifier:&nbsp;</h2><strong>CT6.2b</strong></p>
+<p><span class="warningyellow">LAGE-1B is a splicing variant of CTAG2.</span></p><div id="div0" class="even"><h2>RefSeq :</h2><p></p>
+</div>
+
+<div id="div1" class="odd">
+</div>
+</div>
+
+<!--/div --><!--fim do #content-->
+<div id="footer">
+<p>2005-2009&copy; CT Antigens Database</p>
+</div>
+</body>
+</html>
